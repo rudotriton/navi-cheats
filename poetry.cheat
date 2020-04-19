@@ -1,0 +1,4 @@
+% python, poetry
+
+# Run in virtual env
+poetry run python <my-package>
