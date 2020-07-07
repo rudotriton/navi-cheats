@@ -81,6 +81,9 @@ navi fn url::open 'https://github.com/pulls?&q=author:<user>+is:open+is:pr'
 git fetch origin pull/<pr_number>/head:pr/<pr_number> \
    && git checkout pr/<pr_number>
 
+# Fix reference
+git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<default_branch_name>
+
 # Add a new module
 git submodule add <repository> <path>
 
