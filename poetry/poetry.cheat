@@ -2,3 +2,6 @@
 
 # Run in virtual env
 poetry run python <package-name>
+
+# Delete all global pip packages
+pip uninstall -y -r <(pip freeze)
